@@ -1,0 +1,190 @@
+!==============================================================
+!
+! X R E S O U R C E S
+!
+! Global
+
+! fg and bg might be overwritten by an imported colorscheme
+*foreground: #807777
+*background: #151515
+*saveLines: 1024
+
+Xcursor.theme: ComixCursors-White-Small-Slim
+! Fix urxvt 256 colors
+ # include ".config/xresources/urxvt_fix"
+!==============================================================
+!
+! X f t
+!
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
+
+!==============================================================
+!
+! X T e r m
+!
+xterm*borderWidth: 0
+xterm*dynamicColors: true
+xterm*faceName: xft:Pragmata:pixelsize=10
+xterm*geometry: 80x23
+xterm*utf8: 2
+
+!==============================================================
+!
+! U R x v t
+!
+URxvt*font: xft:Terminus:pixelsize=11
+URxvt*boldFont: xft:Terminus:pixelsize=11
+!URxvt*font: xft:Fixed:pixelsize=11
+!URxvt*boldFont: xft:Fixed:pixelsize=11
+
+URxvt*buffered: true
+
+URxvt*cursorBlink: false
+URxvt*cursorUnderline: false
+
+URxvt*geometry: 90x20
+URxvt*internalBorder: 3
+
+!URxvt*reverseVideo: true
+
+URxvt*depth: 24
+
+URxvt*dynamicColors: on
+URxvt*scrollBar: false
+URxvt*scrollBar_right: true
+URxvt*scrollstyle: plain
+URxvt*scrollColor: #2873a2
+URxvt*scrollWithBuffer: false
+URxvt*scrollTtyOutput: true
+
+URxvt*urgentOnBell: true
+!URxvt*visualBell: true
+
+URxvt*pointerBlank: true
+
+URxvt*termName: rxvt-256color
+
+! Tabs
+URxvt.tabbed.tabbar-fg: 8
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 0
+URxvt.tabbed.tab-bg: 4
+URxvt*transparent: true
+URxvt*shading: 10 # 0 to 99 darkens, 101 to 200 lightens
+
+! Perls stuff
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,tabbed
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: /usr/bin/luakit
+URxvt.matcher.button: 1
+
+
+! ---------------------------------------------------------------------------
+!       taurus colors {{{1
+! ---------------------------------------------------------------------------
+
+!black
+URxvt.color0:     #262729
+URxvt.color8:     #554444
+!red
+! URxvt.color1:    #F92672 !Original
+URxvt.color1:    #E74D33
+URxvt.color9:    #F92672
+!green
+URxvt.color2:    #A6E22E
+URxvt.color10:   #B2E87D
+!yellow
+URxvt.color3:    #FFC123
+URxvt.color11:   #EDFF44
+!blue
+URxvt.color4:    #66D9EF
+URxvt.color12:   #66D9EF
+!magenta
+! URxvt.color5:    #9E6FFE
+URxvt.color5:    #DA679E
+URxvt.color13:   #F115AC
+!cyan
+URxvt.color6:    #5E7175
+URxvt.color14:   #A3BABF
+!white
+URxvt.color7:    #CCCCC6
+URxvt.color15:   #F8F8F2
+
+
+
+
+
+!
+! D M E N U
+!
+dmenu.font: xft:Terminus:size=9
+dmenu.foreground: #808080
+dmenu.background: #151515
+dmenu.selforeground: #151515
+dmenu.selbackground: #ff8939
+
+!==============================================================
+!
+! C O L O R S
+!
+ # include ".config/xresources/railscast_colors"
+ # include ".config/xresources/colors"
+
+! Fix urxvt 256 colors
+ # include ".config/xresources/urxvt_fix"
+!Config ncmpcpp
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ncmpcpp*font: xft:terminus R:pixelsize=9:antialias=true
+ncmpcpp*boldFont: xft:terminus R:pixelsize=9:antialias=true
+ncmpcpp*scrollBar: false
+!--------------
+!Fondo y cursor
+!--------------
+ncmpcpp*background: #202020
+ncmpcpp*foreground: #ebebeb
+ncmpcpp*cursorBlink: false
+ncmpcpp*cursorUnderline: true
+ncmpcpp*pointerColor: red
+ncmpcpp*pointerColorBackground: black
+ncmpcpp*cursorColor: #e04613
+!-------------
+!Transparencia
+!-------------
+ncmpcpp*transparent: true
+ncmpcpp*shading: 7
+
+#ncmpcpp*geometry:59x29 
+
+!black
+ncmpcpp.color0:     #262729
+ncmpcpp.color8:     #554444
+!red
+! ncmpcpp.color1:    #F92672 !Original
+ncmpcpp.color1:    #E74D33
+ncmpcpp.color9:    #F92672
+!green
+ncmpcpp.color2:    #A6E22E
+ncmpcpp.color10:   #B2E87D
+!yellow
+ncmpcpp.color3:    #FFC123
+ncmpcpp.color11:   #EDFF44
+!blue
+ncmpcpp.color4:    #66D9EF
+ncmpcpp.color12:   #66D9EF
+!magenta
+! ncmpcpp.color5:    #9E6FFE
+ncmpcpp.color5:    #DA679E
+ncmpcpp.color13:   #F115AC
+!cyan
+ncmpcpp.color6:    #5E7175
+ncmpcpp.color14:   #A3BABF
+!white
+ncmpcpp.color7:    #CCCCC6
+ncmpcpp.color15:   #F8F8F2
